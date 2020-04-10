@@ -1,52 +1,86 @@
 const orgChart = {
-    Zuckerberg: {
-        Schroepfer: {
-            Bosworth: {
-                Steve: {},
-                Kyle: {},
-                Andra: {}
-            },
-            Zhao: {
-                Richie: {},
-                Sofia: {},
-                Jen: {}
-            }
+    name: Zuckerberg,
+    subs: [
+        { 
+            name: Schroepfer,
+            subs: [
+                { 
+                    name: Bosworth,
+                    subs: [
+                        { name: Steve },
+                        { name: Kyle },
+                        { name: Andra}
+                    ]
+                },
+                {
+                    name: Zhao,
+                    subs: [
+                        { name: Richie },
+                        { name: Sofia },
+                        { name: Jen }
+                    ]     
+                }
+            ]
         },
-        Schrage: {
-            VanDyck: {
-                Sabrina: {},
-                Michelle: {},
-                Josh: {}
-            },
-            Swain: {
-                Blanch: {},
-                Tom: {},
-                Joe: {}
-            }
+        {
+            name: Schrage,
+            subs: [
+                {
+                    name: VanDyck,
+                    subs: [
+                        { name: Sabrina },
+                        { name: Michelle },
+                        { name: Josh }
+                    ]
+                },
+                {
+                    name: Swain,
+                    subs: [
+                        { name: Blanch },
+                        { name: Tom },
+                        { name: Joe }
+                    ]
+                }
+            ]
         },
-        Sandberg: {
-            Goler: {
-                Eddie: {},
-                Julie: {},
-                Annie: {}
-            },
-            Hernandez: {
-                Rowi: {},
-                Inga: {},
-                Morgan: {}
-            },
-            Moissinac: {
-                Amy: {},
-                Chuck: {},
-                Vinni: {}
-            },
-            Kelley: {
-                Eric: {},
-                Ana: {},
-                Wes: {}
-            }
+        {
+            name: Sandberg,
+            subs: [
+                {
+                    name: Goler,
+                    subs: [
+                        { name: Eddie },
+                        { name: Julie },
+                        { name: Annie }
+                    ]   
+                },
+                {
+                    name: Hernandez,
+                    subs: [
+                        { name: Rowi },
+                        { name: Inga },
+                        { name: Morgan }
+                    ]  
+                },
+                {
+                    name: Moissinac,
+                    subs: [
+                        { name: Amy },
+                        { name: Chuck },
+                        { name: Vinni }
+                    ] 
+                },
+                {
+                    name: Kelley,
+                    subs: [
+                        { name: Eric },
+                        { name: Ana },
+                        { name: Wes }
+                    ] 
+                }
+            ]    
         }
-    }
+    ]
 }
 
 function printChart(chartObj, indent) {
