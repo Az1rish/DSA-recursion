@@ -1,6 +1,7 @@
-function binary(number, binNum) {
-  
-    if (number === 1) {
+function binary(number, binNum = "") {
+    if (!number) {
+      return "0"
+    } else if (number === 1) {
       return "1" + binNum
     } else {
       if (number % 2 === 0) {
@@ -12,4 +13,4 @@ function binary(number, binNum) {
     }
   }
   
-  console.log(binary(16, ""))
+  console.log(binary(748))
