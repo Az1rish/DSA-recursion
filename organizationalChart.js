@@ -83,16 +83,17 @@ const orgChart = {
     ]
 }
 
-function printChart(chartObj, indent) {
+function printChart(chartObj) {
     if (!chartObj.subs) {
-        return chartObj.name;
+        console.log("\t" + chartObj.name);
     }
     else {
       // print name value of each object in subs array
+      console.log("\t" + chartObj.name);
       for (let i = 0; i < chartObj.subs.length; i++) {
-        return indent + chartObj.subs[i].name + "\r" + printChart(chartObj[subs], indent + "\t");
+       printChart(chartObj.subs[i]);
        }
   }
 }
     
-console.log(printChart(orgChart, ""));
+printChart(orgChart);
