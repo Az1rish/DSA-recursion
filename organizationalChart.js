@@ -84,24 +84,15 @@ const orgChart = {
 }
 
 function printChart(chartObj, indent) {
-        if (!Object.keys(chartObj).length) {
-            return;
-        }
-        else {
-            // Make array of object keys
-            const chartArray = Object.keys(chartObj);
-            // Make for loop over array
-            for ( let i = 0; i < chartArray.length; i++) {
-                // Inside loop - Print key
-              let newObj = chartArray[i];
-                // Call function again recursively - argument is that keys value
-                //value stored at that key
-                // Print name of key
-              indent += "\t";
-              return indent + newObj + "\r" + printChart(chartObj[newObj], indent);
-            }
-             
-        }
+    if (!chartObj.subs) {
+        return chartObj.name;
     }
+    else {
+      // print name value of each object in subs array
+      for (let i = 0; i < chartObj.subs.length; i++) {
+        return indent + chartObj.subs[i].name + "\r" + printChart(chartObj[name], indent + "\t");
+       }
+  }
+}
     
-    console.log(printChart(orgChart, ""));
+console.log(printChart(orgChart, ""));
