@@ -90,7 +90,7 @@ function printChart(chartObj, indent) {
     else {
       // print name value of each object in subs array
       for (let i = 0; i < chartObj.subs.length; i++) {
-        return indent + chartObj.subs[i].name + "\r" + printChart(chartObj[name], indent + "\t");
+        return indent + chartObj.subs[i].name + "\r" + printChart(chartObj[subs], indent + "\t");
        }
   }
 }
