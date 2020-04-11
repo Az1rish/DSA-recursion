@@ -1,81 +1,81 @@
 const orgChart = {
-    name: Zuckerberg,
+    name: "Zuckerberg",
     subs: [
         { 
-            name: Schroepfer,
+            name: "Schroepfer",
             subs: [
                 { 
-                    name: Bosworth,
+                    name: "Bosworth",
                     subs: [
-                        { name: Steve },
-                        { name: Kyle },
-                        { name: Andra}
+                        { name: "Steve" },
+                        { name: "Kyle" },
+                        { name: "Andra"}
                     ]
                 },
                 {
-                    name: Zhao,
+                    name: "Zhao",
                     subs: [
-                        { name: Richie },
-                        { name: Sofia },
-                        { name: Jen }
+                        { name: "Richie" },
+                        { name: "Sofia" },
+                        { name: "Jen" }
                     ]     
                 }
             ]
         },
         {
-            name: Schrage,
+            name: "Schrage",
             subs: [
                 {
-                    name: VanDyck,
+                    name: "VanDyck",
                     subs: [
-                        { name: Sabrina },
-                        { name: Michelle },
-                        { name: Josh }
+                        { name: "Sabrina" },
+                        { name: "Michelle" },
+                        { name: "Josh" }
                     ]
                 },
                 {
-                    name: Swain,
+                    name: "Swain",
                     subs: [
-                        { name: Blanch },
-                        { name: Tom },
-                        { name: Joe }
+                        { name: "Blanch" },
+                        { name: "Tom" },
+                        { name: "Joe" }
                     ]
                 }
             ]
         },
         {
-            name: Sandberg,
+            name: "Sandberg",
             subs: [
                 {
-                    name: Goler,
+                    name: "Goler",
                     subs: [
-                        { name: Eddie },
-                        { name: Julie },
-                        { name: Annie }
+                        { name: "Eddie" },
+                        { name: "Julie" },
+                        { name: "Annie" }
                     ]   
                 },
                 {
-                    name: Hernandez,
+                    name: "Hernandez",
                     subs: [
-                        { name: Rowi },
-                        { name: Inga },
-                        { name: Morgan }
+                        { name: "Rowi" },
+                        { name: "Inga" },
+                        { name: "Morgan" }
                     ]  
                 },
                 {
-                    name: Moissinac,
+                    name: "Moissinac",
                     subs: [
-                        { name: Amy },
-                        { name: Chuck },
-                        { name: Vinni }
+                        { name: "Amy" },
+                        { name: "Chuck" },
+                        { name: "Vinni" }
                     ] 
                 },
                 {
-                    name: Kelley,
+                    name: "Kelley",
                     subs: [
-                        { name: Eric },
-                        { name: Ana },
-                        { name: Wes }
+                        { name: "Eric" },
+                        { name: "Ana" },
+                        { name: "Wes" }
                     ] 
                 }
             ]    
